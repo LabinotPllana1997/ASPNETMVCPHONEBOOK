@@ -1,0 +1,27 @@
+﻿@model List<ASPNETMVCPHONEBOOK.Models.Domain.Contact>
+
+@{
+}
+
+<h1>Contacts</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>FirstName</th>
+			<th>Surname</th>
+			<th>PhoneNumber</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var contact in Model)
+		{
+			<tr>
+				<td>@contact.FirstName</td>
+				<td>@contact.Surname</td>
+				<td>@contact.PhoneNumber</td>
+				<td><a href="Contacts/View/@contact.Id">View</a></td>
+			</tr>
+		}
+	</tbody>
+</table>

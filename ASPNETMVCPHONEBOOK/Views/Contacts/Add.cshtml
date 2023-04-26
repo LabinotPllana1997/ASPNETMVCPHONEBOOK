@@ -1,0 +1,21 @@
+﻿@model ASPNETMVCPHONEBOOK.Models.AddContactViewModel
+
+@{
+}
+<h1>Labinot's Phonebook - Add Contact</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">First Name</label>
+        <input type="text" class="form-control" asp-for="FirstName" required maxlength="20">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Surname</label>
+        <input type="text" class="form-control" asp-for="Surname" required maxlength="20">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" asp-for="PhoneNumber" required maxlength="20">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
